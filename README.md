@@ -17,8 +17,7 @@ Playbooks are:
 
 ### Security
 
-- [Vessel Hacking Playbook](https://vessel.hackingplaybook.com) - Maritime cybersecurity testing: NMEA 0183/2000, CAN bus attacks, spoofing, bus priority, address claiming. ([source](https://github.com/blackandwhitehat/awesome-hacking-playbook/tree/main/vessel-hacking))
-- [IoT Hacking Playbook](https://iot.hackingplaybook.com) - Hardware hacking with Linux: UART, SPI, SWD/JTAG, firmware extraction, Ghidra analysis. ([source](https://github.com/blackandwhitehat/awesome-hacking-playbook/tree/main/iot-hacking))
+- [Awesome Hacking Playbook](https://hackingplaybook.com) - Community-sourced security playbooks covering vessel hacking, IoT/hardware hacking, and more. ([source](https://github.com/blackandwhitehat/awesome-hacking-playbook))
 
 ### Networking
 
