@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Awesome Playbooks</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📖</text></svg>">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0a0a0a;
+      --bg2: #111;
+      --text: #e0e0e0;
+      --text2: #999;
+      --dim: #555;
+      --green: #00ff88;
+      --green-glow: rgba(0,255,136,0.15);
+      --border: #222;
+      --mono: 'JetBrains Mono', monospace;
+      --sans: 'Inter', -apple-system, sans-serif;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--sans);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+    .container {
+      max-width: 640px;
+      width: 100%;
+      text-align: center;
+    }
+    .icon { font-size: 3rem; margin-bottom: 1.5rem; }
+    h1 {
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      font-weight: 900;
+      letter-spacing: -0.5px;
+      margin-bottom: 0.75rem;
+      color: #fff;
+    }
+    .tagline {
+      font-family: var(--mono);
+      font-size: 0.8rem;
+      color: var(--green);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+    }
+    .desc {
+      color: var(--text2);
+      font-size: 0.95rem;
+      line-height: 1.8;
+      margin-bottom: 2.5rem;
+    }
+    .desc strong { color: var(--text); font-weight: 600; }
+    .what-is {
+      text-align: left;
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      padding: 1.5rem 2rem;
+      margin-bottom: 2.5rem;
+      font-family: var(--mono);
+      font-size: 0.78rem;
+      color: var(--text2);
+      line-height: 2;
+    }
+    .what-is .label {
+      color: var(--green);
+      font-size: 0.65rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 0.75rem;
+      display: block;
+    }
+    .what-is li {
+      list-style: none;
+      padding-left: 1.2rem;
+      position: relative;
+    }
+    .what-is li::before {
+      content: '>';
+      position: absolute;
+      left: 0;
+      color: var(--green);
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: transparent;
+      color: var(--green);
+      border: 1px solid var(--green);
+      padding: 0.8rem 2rem;
+      font-family: var(--mono);
+      font-size: 0.85rem;
+      font-weight: 500;
+      text-decoration: none;
+      letter-spacing: 1px;
+      transition: all 0.3s;
+    }
+    .btn:hover {
+      background: var(--green);
+      color: var(--bg);
+      box-shadow: 0 0 30px var(--green-glow);
+    }
+    .btn svg {
+      width: 18px;
+      height: 18px;
+      fill: currentColor;
+    }
+    .featured {
+      margin-top: 3rem;
+      text-align: left;
+    }
+    .featured-label {
+      font-family: var(--mono);
+      font-size: 0.6rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--dim);
+      margin-bottom: 1rem;
+    }
+    .featured-item {
+      display: block;
+      padding: 1rem 1.5rem;
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      text-decoration: none;
+      color: var(--text);
+      margin-bottom: 0.75rem;
+      transition: all 0.2s;
+    }
+    .featured-item:hover {
+      border-color: var(--green);
+      box-shadow: 0 0 15px var(--green-glow);
+    }
+    .featured-item .name {
+      font-weight: 700;
+      font-size: 0.9rem;
+      margin-bottom: 0.25rem;
+    }
+    .featured-item .detail {
+      font-size: 0.75rem;
+      color: var(--text2);
+    }
+    .footer {
+      margin-top: 3rem;
+      font-family: var(--mono);
+      font-size: 0.65rem;
+      color: var(--dim);
+    }
+    .footer a { color: var(--dim); text-decoration: none; }
+    .footer a:hover { color: var(--green); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="icon">📖</div>
+    <h1>Awesome Playbooks</h1>
+    <p class="tagline">by practitioners, for practitioners</p>
+    <p class="desc">
+      A curated list of <strong>community-sourced playbooks</strong>. Hands-on, chapter-based instructional content that goes beyond link lists. Real knowledge, structured for learning.
+    </p>
+
+    <div class="what-is">
+      <span class="label">What makes a playbook</span>
+      <ul>
+        <li>Chapter-based, building on each topic</li>
+        <li>Practical commands, configs, and examples</li>
+        <li>Written by people who do the work</li>
+        <li>Open source, licensed for sharing</li>
+      </ul>
+    </div>
+
+    <a href="https://github.com/blackandwhitehat/awesome-playbooks" class="btn">
+      <svg viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+      View on GitHub
+    </a>
+
+    <div class="featured">
+      <div class="featured-label">Featured Playbooks</div>
+      <a href="https://hackingplaybook.com" class="featured-item">
+        <div class="name">Awesome Hacking Playbook</div>
+        <div class="detail">Vessel hacking, IoT/hardware hacking, and more. Community-sourced security playbooks.</div>
+      </a>
+    </div>
+
+    <div class="footer">
+      <a href="https://github.com/blackandwhitehat/awesome-playbooks">GitHub</a> · CC BY-SA 4.0
+    </div>
+  </div>
+</body>
+</html>
